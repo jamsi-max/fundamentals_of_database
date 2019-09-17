@@ -1,4 +1,4 @@
--- Создаем базу данных example
+-- РЎРѕР·РґР°РµРј Р±Р°Р·Сѓ РґР°РЅРЅС‹С… example
 
 create database if not exists example;
 use example;
@@ -6,14 +6,14 @@ drop table if exists users;
 create table users(
     id SERIAL primary key,
     name varchar(100)
-) COMMENT = 'Таблица users';
+) COMMENT = 'РўР°Р±Р»РёС†Р° users';
 
-/* Создание дампа в консоле: 
+/* РЎРѕР·РґР°РЅРёРµ РґР°РјРїР° РІ РєРѕРЅСЃРѕР»Рµ: 
  * mysqldump example > C:\Users\Device\example_dump.sql
- * Разворачиваем дамп:
+ * Р Р°Р·РІРѕСЂР°С‡РёРІР°РµРј РґР°РјРї:
  * mysql example < C:\Users\Device\example_dump.sql
  */
 
-/*Создаем dump первыч 100 записей
+/*РЎРѕР·РґР°РµРј dump РїРµСЂРІС‹С‡ 100 Р·Р°РїРёСЃРµР№
  *mysqldump --where="true limit 100" mysql --tables help_keyword > C:\Users\Device\mysql_help_keyword_dump.sql
  */
